@@ -1,0 +1,106 @@
+<div class="home-container">
+  <div class="home-header">
+    <header class="home-navbar-interactive">
+      <span class="home-logo">Team Name</span>
+        <div class="home-buttons">
+          <button class="home-login button">Login</button>
+          <button class="home-register button">Register</button>
+        </div>
+    </header>
+  </div>
+  <div class="home-hero">
+    <div class="home-hero1">
+      <div class="home-container01">
+        <h1 class="home-hero-heading heading1">Process Team</h1>
+        <span class="home-hero-sub-heading">
+          Empowering Excellence, Elevating Processes
+        </span>
+        <div class="home-btn-group">
+          <button class="home-hero-button1 b  utton" (click)="scroll(target)">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="home-details" #target>
+    <div class="home-details1">
+      <div class="home-container01">
+        <h2 class="home-details-heading heading1">About Our Team</h2>
+        <span class="home-details-sub-heading">
+          Step into the beating heart of innovation. We are the architects of efficiency, transforming manual tasks into
+          seamlessly orchestrated processes empowered by the forefront of technology.
+          We don't just embrace the latest tech, we wield it to elevate your work experience.
+          <br>With a relentless pursuit of excellence,
+          we refine and optimize day by day, ensuring that each interaction with our systems is a testament to the
+          prowess of cutting-edge solutions.
+          <p>
+            <br>
+          Team Expertise:<br>
+            Our team comprises a diverse group of professionals, each bringing a unique set of skills to the table. From
+            process
+            analysts and automation specialists to project managers and user experience designers, we collaborate
+            seamlessly to
+            deliver holistic solutions.
+          </p>
+          <p>
+            <br>
+          Looking Ahead:<br>
+            As we continue on our journey of innovation, our team remains dedicated to pushing the boundaries of what's
+            possible
+            in the realm of process optimization. We envision a future where manual tasks are minimized, allowing our
+            colleagues
+            to focus on strategic, high-impact activities that drive the success of our company.
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="home-features">
+    <div class="home-features-container">
+      <div class="home-features1">
+        <div class="home-container01">
+          <h2 class="home-features-heading heading2">Discover Our Features</h2>
+          <span class="home-features-sub-heading">
+            Experience the creativity and expertise of our team
+          </span>
+        </div>
+        <div class="home-container04">
+          <feature-card Heading="Tech Alchemists"
+            SubHeading="Transforming challenges into opportunities through the magic of code."></feature-card>
+          <feature-card Heading="Continuous Evolution"
+            SubHeading="Staying ahead in the digital landscape with ongoing tech innovation."></feature-card>
+          <feature-card Heading="Partners in Progress"
+            SubHeading="Collaborating in your success story, crafting the path to excellence."></feature-card>
+          <feature-card Heading="Innovative Problem Solvers"
+            SubHeading="Tackling complex issues with creative tech solutions."></feature-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="home-gallery">
+  <div class="home-gallery1">
+    <h1 class="home-gallery-heading heading2">Event Highlights</h1>
+    <span class="home-gallery-sub-heading">
+      Take a look at some of our memorable event moments
+    </span>
+    <label for="imageInput" class="custom-file-upload">
+      Choose Files
+    </label>
+    <input type="file" id="imageInput" (change)="onFileChange($event)" accept="image/*" multiple style="display:none;">
+    <div class="home-container29">
+        <div class="home-container29">
+          <div *ngFor="let image of selectedImages" class="home-container29">
+            <img [src]="image" class="gallery-image" style="width:300px;height: 400px;"/>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="home-footer">
+  <footer class="home-footer1">
+    <div class="home-container32">
+      <span class="home-logo2">   Process Portal</span>
+    </div>
+  </footer>
+</div>
